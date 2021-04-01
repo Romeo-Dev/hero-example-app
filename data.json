@@ -1,0 +1,33 @@
+{
+    "heros": [
+        {
+            "name": "Sibelle",
+            "race ": "ELf",
+            "class": "warrior-mage"
+        },{
+            "name": "Bestia",
+            "race ": "Dwarf",
+            "class": "warrior"
+        },{
+            "name": "Ifan",
+            "race ": "Human",
+            "class": "Lone-wolf"
+        },{
+            "name": "Togrim",
+            "race ": "Dwarf",
+            "class": "Knight"
+        },{
+            "name": "Auriel",
+            "race ": "ELf",
+            "class": "StormChaser"
+        },{
+            "name": "Loshe",
+            "race ": "Human",
+            "class": "Master of sparks"
+        },{
+            "name": "Lucians",
+            "race ": "God",
+            "class": "Warrior-gemoancer"
+        }
+    ]
+}
