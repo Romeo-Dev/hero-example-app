@@ -1,30 +1,37 @@
 {
     "heros": [
         {
+            "id": 1,
             "name": "Sibelle",
             "race ": "ELf",
             "class": "warrior-mage"
         },{
+            "id": 2,
             "name": "Bestia",
             "race ": "Dwarf",
             "class": "warrior"
         },{
+            "id": 3,
             "name": "Ifan",
             "race ": "Human",
             "class": "Lone-wolf"
         },{
+            "id": 4,
             "name": "Togrim",
             "race ": "Dwarf",
             "class": "Knight"
         },{
+            "id": 5,
             "name": "Auriel",
             "race ": "ELf",
             "class": "StormChaser"
         },{
+            "id": 6,
             "name": "Loshe",
             "race ": "Human",
             "class": "Master of sparks"
         },{
+            "id": 7,
             "name": "Lucians",
             "race ": "God",
             "class": "Warrior-gemoancer"
