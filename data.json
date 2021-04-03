@@ -3,38 +3,58 @@
         {
             "id": 1,
             "name": "Sibelle",
-            "race ": "ELf",
+            "race": "Elf",
             "class": "warrior-mage"
         },{
             "id": 2,
             "name": "Bestia",
-            "race ": "Dwarf",
+            "race": "Dwarf",
             "class": "warrior"
         },{
             "id": 3,
             "name": "Ifan",
-            "race ": "Human",
+            "race": "Human",
             "class": "Lone-wolf"
         },{
             "id": 4,
             "name": "Togrim",
-            "race ": "Dwarf",
+            "race": "Dwarf",
             "class": "Knight"
         },{
             "id": 5,
             "name": "Auriel",
-            "race ": "ELf",
+            "race": "Elf",
             "class": "StormChaser"
         },{
             "id": 6,
             "name": "Loshe",
-            "race ": "Human",
+            "race": "Human",
             "class": "Master of sparks"
         },{
             "id": 7,
             "name": "Lucians",
-            "race ": "God",
+            "race": "God",
             "class": "Warrior-gemoancer"
+        },{
+            "id": 8,
+            "name": "Loyse",
+            "race": "Elf",
+            "class": "Master Druid"
+        },{
+            "id": 9,
+            "name": "Garreth",
+            "race": "Human",
+            "class": "Warrior-gemoancer"
+        },{
+            "id": 10,
+            "name": "Leah",
+            "race": "God",
+            "class": "Necro-Warrior"
+        },{
+            "id": 11,
+            "name": "Tarabas",
+            "race": "Human",
+            "class": "Hidrosofist"
         }
     ]
 }

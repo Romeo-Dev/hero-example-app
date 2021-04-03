@@ -1,5 +1,9 @@
 const express = require('express');
 const app = express();
+// Library for sending post request
+//     row and form
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
 // Routes import
 const heroRoutes = require('./routes/hero');
