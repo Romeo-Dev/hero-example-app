@@ -1,19 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const {createError} = require('../helpers/error')
 const heroController = require('../controllers/heroController');
-
-const errMessage = {
-    status: 404,
-    message: 'Resource not found'
-}
-// Create HTTP error
-
-function createError(status, message) {
-  return {
-    status: status,
-    message: message
-  };
-}
 
 router.get('/', (req, res) => {
     res.status(200).json(heroController.getHeros());

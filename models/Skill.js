@@ -63,4 +63,22 @@ function Skill(name, description, memSlot, range, costAP, school, cooldown, cost
             return;
         }
     };
+
+    this.resource = () => {
+        return {
+            id: this.id,
+            name: this.name,
+            school: this.school ,
+            cooldown: this.cooldown,
+            description: this.description,
+            memSlot: this.memSlot,
+            range: this.range,
+            costAp: this.costAP,
+            costSp: this.costSP
+        }
+    };
+}
+
+module.exports = {
+    Skill
 }
