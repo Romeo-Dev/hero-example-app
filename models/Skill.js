@@ -28,27 +28,39 @@ function Skill(name, description, memSlot, range, costAP, school, cooldown, cost
         }
     };
 
-    this.setName = (newName) => {
-        this.name = newName;
+    this.setDescription = (newDesc) => {
+        this.description = newDesc;
     };
 
-    this.setName = (newName) => {
-        this.name = newName;
+    this.setMemSlot = (newSlot) => {
+        if (typeof newSlot != 'number') return;
+        if (newSlot > 0 && newSlot < 10){
+            this.memSlot = newSlot;
+        }else {
+            return;
+        }
     };
 
-    this.setName = (newName) => {
-        this.name = newName;
+    this.setRange = (newRange) => {
+        if (typeof newRange != 'number') return;
+        this.range = newRange;
     };
 
-    this.setName = (newName) => {
-        this.name = newName;
+    this.setCostAp = (newCost) => {
+        if (typeof newCost != 'number') return;
+        if (newCost > 0 && newCost < 10){
+            this.costAP = newCost;
+        }else {
+            return;
+        }
     };
 
-    this.setName = (newName) => {
-        this.name = newName;
-    };
-
-    this.setName = (newName) => {
-        this.name = newName;
+    this.setCostSp = (newCost) => {
+        if (typeof newCost != 'number') return;
+        if (newCost > 0 && newCost < 10){
+            this.costSP = newCost;
+        }else {
+            return;
+        }
     };
 }
