@@ -56,5 +56,150 @@
             "race": "Human",
             "class": "Hidrosofist"
         }
+    ],
+    "Skills": [
+        {
+            "id": 1,
+            "name": "Blinding Radiance",
+            "school": "Aerotheurge",
+            "cooldown": 4,
+            "description": "Enemies around you receive 90% air damage. You receive a status that turns enemies in the 5m radius Blind.",
+            "memSlot": 1,
+            "range": 5,
+            "costAp": 2,
+            "costSp": 0
+        },
+        {
+            "id": 2,
+            "name": "Electric Discharge",
+            "school": "Aerotheurge",
+            "cooldown": 3,
+            "description": "An electrical jolt deals 90% air damage to target character. Sets status Shocked.",
+            "memSlot": 1,
+            "range": 13,
+            "costAp": 2,
+            "costSp": 0
+        },
+        {
+            "id": 3,
+            "name": "Closed Circuit",
+            "school": "Aerotheurge",
+            "cooldown": 4,
+            "description": "Deals 220% Air Damage to enemies around you; then creates cursed static clouds on the edges of the spell.",
+            "memSlot": 2,
+            "range": 4,
+            "costAp": 2,
+            "costSp": 2
+        },
+        {
+            "id": 4,
+            "name": "Chain Lightning",
+            "school": "Aerotheurge",
+            "cooldown": 5,
+            "description": "Shoot a stunning bolt of lightning that forks up to 8 times in a 8m radius and deals 150% Air Damage to each target.",
+            "memSlot": 2,
+            "range": 13,
+            "costAp": 3,
+            "costSp": 1
+        },
+        {
+            "id": 5,
+            "name": "Contamination",
+            "school": "Geomancer",
+            "cooldown": 3,
+            "description": "Set Poisoned for 2 turn(s). 2m Explode radius",
+            "memSlot": 1,
+            "range": 8,
+            "costAp": 1,
+            "costSp": 0
+        },
+        {
+            "id": 6,
+            "name": "Fortify",
+            "school": "Geomancer",
+            "cooldown": 4,
+            "description": "Set Fortified for 3 turn(s).",
+            "memSlot": 1,
+            "range": 13,
+            "costAp": 1,
+            "costSp": 0
+        },
+        {
+            "id": 7,
+            "name": "Corrosive Touch",
+            "school": "Geomancer",
+            "cooldown": 5,
+            "description": "Set Acid for 2 turn(s).",
+            "memSlot": 1,
+            "range": 2,
+            "costAp": 1,
+            "costSp": 0
+        },
+        {
+            "id": 8,
+            "name": "Reactive Armour",
+            "school": "Geomancer",
+            "cooldown": 6,
+            "description": "Damage is based on your current Physical Armour.",
+            "memSlot": 1,
+            "range": 0,
+            "costAp": 2,
+            "costSp": 0
+        },
+        {
+            "id": 9,
+            "name": "Tentacle Lash",
+            "school": "Polymorph",
+            "cooldown": 3,
+            "description": "Lash out at your opponent dealing 125% physical damage and setting Atrophy on them.",
+            "memSlot": 1,
+            "range": 8,
+            "costAp": 2,
+            "costSp": 0
+        },
+        {
+            "id": 10,
+            "name": "Chameleon Cloak",
+            "school": "Polymorph",
+            "cooldown": 6,
+            "description": "Grants you the ability to blend in with any environment as if invisible.",
+            "memSlot": 1,
+            "range": 0,
+            "costAp": 1,
+            "costSp": 0
+        },
+        {
+            "id": 11,
+            "name": "Ignition",
+            "school": "Pyrokinetic ",
+            "cooldown": 3,
+            "description": "Sets enemy characters around you on fire. Deals 40% Fire Damage to each. Ignites all susceptible surfaces.",
+            "memSlot": 1,
+            "range": 0,
+            "costAp": 1,
+            "costSp": 0
+        },
+        {
+            "id": 12,
+            "name": "Sparking Swings",
+            "school": "Pyrokinetic",
+            "cooldown": 3,
+            "description": "Receive Sparkstriker status. This causes your melee attacks to create a 100% Fire Damage spark projectile that bounces off the initial target to hit the closest enemy.",
+            "memSlot": 1,
+            "range": 0,
+            "costAp": 1,
+            "costSp": 0
+        },
+        {
+            "id": 13,
+            "name": "Fireball",
+            "school": "Pyrokinetic",
+            "cooldown": 4,
+            "description": "Hurl a fiery sphere that will explode, dealing 100% Fire Damage",
+            "memSlot": 1,
+            "range": 13,
+            "costAp": 2,
+            "costSp": 0
+        }
     ]
 }

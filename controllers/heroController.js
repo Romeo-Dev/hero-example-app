@@ -38,7 +38,6 @@ function updateHero(id, { name = null, race = null, clas = null }) {
     updateH.setName(name ?? updateH.name);
     updateH.setRace(race ?? updateH.race);
     updateH.setClass(clas ?? updateH.class);
-    console.log(updateH);
 
     // Update list items
     let index = data.heros.indexOf(old);
