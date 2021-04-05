@@ -18,4 +18,14 @@ router.delete('/:id([0-9]+)', (req, res) => {
     res.status(skill? 200 : 404).json(skill? skill : createError(404, 'skill not found on list'));
 });
 
+router.post('/', (req, res) => {
+    let skill = skillController.addSkill(req.body);
+    res.status(skill? 201: 400).json(skill? skill : createError(400, 'Skill not be created, bad request or missing parameters'));
+});
+
+router.put('/:id([0-9]+)', (req, res) => {
+    console.log(req.body);
+    let upSkill = skillController.updateSkill(req.params.id, req.body);
+    res.status(upSkill? 201: 400).json(upSkill? upSkill : createError(400, 'Skill not be updated, missing or not validated request'));
+});
 module.exports = router;
