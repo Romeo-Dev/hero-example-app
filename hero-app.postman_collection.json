@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "5c508ba3-fc2a-42d9-8a85-3419cd3cefdd",
+		"name": "hero-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hero Request",
+			"item": [
+				{
+					"name": "getHeros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{port}}/heros",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"heros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHeroById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{port}}/heros/5",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"heros",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateHero",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "{{$randomInt}}",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "{{$randomFirstName}}",
+									"type": "text"
+								},
+								{
+									"key": "race",
+									"value": "{{$randomLoremWord}}",
+									"type": "text"
+								},
+								{
+									"key": "class",
+									"value": "{{$randomJobDescriptor}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/heros",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"heros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateHero",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "{{$randomInt}}",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "{{$randomFirstName}}",
+									"type": "text"
+								},
+								{
+									"key": "race",
+									"value": "{{$randomLoremWord}}",
+									"type": "text"
+								},
+								{
+									"key": "clas",
+									"value": "{{$randomJobDescriptor}}",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/heros/1",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"heros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteHero",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{port}}/heros/72",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"heros",
+								"72"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Crud for Hero collections"
+		},
+		{
+			"name": "SKill Request",
+			"item": [
+				{
+					"name": "getSkills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{port}}/skills",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSkillByid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{port}}/skills/1",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"skills",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddSkill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "{{$randomFullName}}",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "{{$randomLoremLines}}",
+									"type": "text"
+								},
+								{
+									"key": "memSlot",
+									"value": "{{$randomInt}}",
+									"type": "text"
+								},
+								{
+									"key": "range",
+									"value": "{{$randomInt}}",
+									"type": "text"
+								},
+								{
+									"key": "costAP",
+									"value": "{{$randomInt}}",
+									"type": "text"
+								},
+								{
+									"key": "school",
+									"value": "{{$randomLoremWord}}",
+									"type": "text"
+								},
+								{
+									"key": "cooldown",
+									"value": "{{$randomInt}}",
+									"type": "text"
+								},
+								{
+									"key": "costSP",
+									"value": "{{$randomInt}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/skills",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSkill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}:{{port}}/skills/10",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"skills",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateSkill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "CIao sono update",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}:{{port}}/skills/1",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"skills",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "## Crud for SKill collections"
+		}
+	]
+}
