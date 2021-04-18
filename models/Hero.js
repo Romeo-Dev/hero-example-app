@@ -1,19 +1,31 @@
-function Hero(name, race, clas, id = null) {
-    this.id = id ?? Math.floor(Math.random() * 101);
-    this.name = name;
-    this.race = race;
-    this.class = clas;
-
-    // Setter class
-    this.setName = (newName) => {
-        this.name = newName;
-    }; this.setClass = (newName) => {
-        this.class = newName;
-    }; this.setRace = (newName) => {
-        this.race = newName;
-    };
-}
-
-module.exports = {
-    Hero
-}
+'use strict';
+const {
+  Model
+} = require('sequelize');
+module.exports = (sequelize, DataTypes) => {
+  class Hero extends Model {
+    /**
+     * Helper method for defining associations.
+     * This method is not a part of Sequelize lifecycle.
+     * The `models/index` file will call this method automatically.
+     */
+    static associate(models) {
+      // define association here
+    }
+  };
+  Hero.init({
+    name: DataTypes.STRING,
+    lore: DataTypes.TEXT,
+    strength: DataTypes.INTEGER,
+    finesse: DataTypes.INTEGER,
+    constitution: DataTypes.INTEGER,
+    intelligence: DataTypes.INTEGER,
+    memory: DataTypes.INTEGER,
+    wits: DataTypes.INTEGER,
+    level: DataTypes.INTEGER
+  }, {
+    sequelize,
+    modelName: 'Hero',
+  });
+  return Hero;
+};
