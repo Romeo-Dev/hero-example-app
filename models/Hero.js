@@ -14,15 +14,46 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Hero.init({
-    name: DataTypes.STRING,
+    name: {
+      type:DataTypes.STRING,
+      allowNull: false
+    },
     lore: DataTypes.TEXT,
-    strength: DataTypes.INTEGER,
-    finesse: DataTypes.INTEGER,
-    constitution: DataTypes.INTEGER,
-    intelligence: DataTypes.INTEGER,
-    memory: DataTypes.INTEGER,
-    wits: DataTypes.INTEGER,
-    level: DataTypes.INTEGER
+    strength: {
+      type:DataTypes.INTEGER,
+      allowNull:false,
+      defaultValue:10
+    },
+    finesse: {
+      type:DataTypes.INTEGER,
+      allowNull:false,
+      defaultValue:10
+    },
+    constitution: {
+      type:DataTypes.INTEGER,
+      allowNull:false,
+      defaultValue:10
+    },
+    intelligence: {
+      type:DataTypes.INTEGER,
+      allowNull:false,
+      defaultValue:10
+    },
+    memory: {
+      type:DataTypes.INTEGER,
+      allowNull:false,
+      defaultValue:10
+    },
+    wits: {
+      type:DataTypes.INTEGER,
+      allowNull:false,
+      defaultValue:10
+    },
+    level: {
+      type:DataTypes.INTEGER,
+      allowNull:false,
+      defaultValue:1
+    }
   }, {
     sequelize,
     modelName: 'Hero',
