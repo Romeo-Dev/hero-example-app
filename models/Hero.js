@@ -18,6 +18,11 @@ module.exports = (sequelize, DataTypes) => {
       type:DataTypes.STRING,
       allowNull: false
     },
+    origin: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+      allowNull: false
+    },
     lore: DataTypes.TEXT,
     strength: {
       type:DataTypes.INTEGER,
